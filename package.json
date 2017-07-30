@@ -1,0 +1,23 @@
+{
+  "name": "node-jsdoc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "babel src --out-dir dist",
+    "serve": "node dist/app",
+    "start": "develop nodemon --watch src --exec nodemon src/app",
+    "jsdoc": "jsdoc index.js",
+    "clean": "rimraf out"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "install": "^0.8.1",
+    "npm": "^3.10.8",
+    "rimraf": "^2.5.2",
+    "body-parser": "^1.15.0",
+    "express": "^4.13.4",
+    "nodemon": "^1.11.0"
+  }
+}
